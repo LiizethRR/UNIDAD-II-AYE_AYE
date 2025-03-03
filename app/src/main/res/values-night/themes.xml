@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.RibbitDaryPersonal" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/azul</item>
+    </style>
+
+    <style name="Theme.RibbitDaryPersonal" parent="Base.Theme.RibbitDaryPersonal" />
+</resources>

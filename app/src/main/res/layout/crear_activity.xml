@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/u_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:hint="Nombre del producto"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="#2E7D32"
+        android:textColorHint="#1D3557" />
+
+    <EditText
+        android:id="@+id/etxDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:hint="Precio"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="#2E7D32"
+        android:textColorHint="#1D3557" />
+
+    <EditText
+        android:id="@+id/etxNotas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:hint="Notas"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="#2E7D32"
+        android:textColorHint="#1D3557" />
+
+    <Spinner
+        android:id="@+id/spinnerTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:popupBackground="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+    </LinearLayout>
+</LinearLayout>

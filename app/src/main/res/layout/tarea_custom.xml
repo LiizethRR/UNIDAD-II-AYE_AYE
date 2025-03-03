@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="#E0E0E0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#929EF3EC"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Status Indicator -->
+        <View
+            android:id="@+id/statusIndicator"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="12dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Task Title -->
+            <TextView
+                android:id="@+id/txtNombreTarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Nombre Producto"
+                android:textColor="#DD1E3159"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <!-- Task Date with Icon -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/txtDescripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción"
+                    android:textColor="#C5CBCE"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <!-- Task Type Badge -->
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipTipo"
+                android:layout_width="155dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:text="Tipo de Producto"
+                android:textColor="#4C53AF"
+                app:chipBackgroundColor="#CEF8F4"
+                app:chipMinHeight="24dp"
+                app:chipMinTouchTargetSize="24dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
